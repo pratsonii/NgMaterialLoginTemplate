@@ -1,0 +1,37 @@
+<div class="main-div">
+    <mat-card class="z-depth-5 center" >
+      <mat-card-title>Registation</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="login()">
+          <mat-form-field class="full-width-input">
+            <input matInput placeholder="Username" formControlName="userName" required >
+            <mat-error *ngIf="isFieldInvalid('userName')">
+              Enter valid Username
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input">
+              <input matInput placeholder="Email" formControlName="email" required >
+              <mat-error *ngIf="isFieldInvalid('email')">
+                Enter valid Email
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input matInput placeholder="Contact No" formControlName="contact" required >
+                <mat-error *ngIf="isFieldInvalid('contact')">
+                  Enter valid Contact No
+                </mat-error>
+              </mat-form-field>
+          <mat-form-field class="full-width-input">
+            <input matInput type = "password"  placeholder="Password" formControlName="password" required>
+            <mat-error *ngIf="isFieldInvalid('password')">
+              Enter valid Password
+            </mat-error>
+          </mat-form-field>
+          <span></span>
+          <button mat-raised-button color="primary" style="margin-top: 20px"><i class="material-icons">
+            </i>Register Me</button>
+          <a href="#" style="margin-left: 1em" (click)="backToLogin()">Back To Login?</a>          
+       </form>
+      </mat-card-content>
+      </mat-card>
+  </div>

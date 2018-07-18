@@ -1,0 +1,14 @@
+.center{
+    width: 35%;
+    margin: 30px auto;
+  }
+  
+  .main-div{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+  }
+
+  .full-width-input {
+    width: 100%;
+  }
